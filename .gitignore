@@ -5,15 +5,33 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-### Kotlin ###
+### Kotlin/Java ###
 .kotlin
 *.class
 *.jar
 *.war
+*.log
 
 ### Gradle ###
 .gradle/
 build/
+.externalNativeBuild/
+.cxx/
+
+### Android Studio ###
+/local.properties
+/captures
+.DS_Store
+
+# .idea 세부 항목 추가 (충돌 원인)
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/codeStyles
+.idea/misc.xml
 
 ### Eclipse ###
 .apt_generated
@@ -37,8 +55,14 @@ bin/
 ### VS Code ###
 .vscode/
 
+### Windows ###
+Thumbs.db
+ehthumbs.db
+
 ### macOS ###
 .DS_Store
 
-### Windows ###
-Thumbs.db
+### 기타 ###
+*.swp
+*.swo
+*.tmp
